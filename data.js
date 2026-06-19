@@ -226,7 +226,7 @@ const EXAM = {
     id: "s3",
     title: "Section 3 — Reading Comprehension & Technical Situations",
     instructions:
-      "Lee el caso y responde con oraciones completas basándote SOLO en el texto. Esta sección no se autocalifica: tus respuestas se guardan y se revisan en grupo con la instructora.",
+      "Lee el caso y responde con oraciones completas basándote SOLO en el texto. Esta sección no se autocalifica: tus respuestas se guardan y se revisan en grupo con la instructora. En Zero y First Conditional Usa la estructura completa (If + Presente Simple + Presente simple / Futuro simple), ejemplo: 'If you don't eat, you get hungry.'",
     caseTitle: "Case Study: The Launch of “MediaStream API”",
     caseText: [
       "The tech development team at the agency is preparing to deploy a new platform called “MediaStream API”. According to the official roadmap, they are going to migrate the database to a cloud server next Monday, and the multimedia team is going to export all the interactive animations on Friday morning. The project manager confirmed that these actions are already scheduled.",
