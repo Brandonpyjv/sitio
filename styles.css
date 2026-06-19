@@ -1,0 +1,240 @@
+/* ====== Variables y base ====== */
+:root {
+  --sena: #39a900;          /* verde institucional SENA */
+  --sena-dark: #2d8400;
+  --ink: #1d2433;
+  --muted: #6b7280;
+  --bg: #f4f7f6;
+  --card: #ffffff;
+  --line: #e5e9ef;
+  --ok: #15a34a;
+  --ok-bg: #e9f9ef;
+  --bad: #e23d3d;
+  --bad-bg: #fdecec;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(20, 40, 30, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 500px at 50% -200px, rgba(57,169,0,0.10), transparent 60%),
+    var(--bg);
+  line-height: 1.55;
+}
+
+/* ====== Topbar / logo SENA ====== */
+.topbar {
+  display: flex;
+  justify-content: center;
+  padding: 22px 16px 6px;
+}
+.logo-sena { height: 84px; width: auto; }
+
+/* ====== Layout ====== */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 12px 18px 60px;
+}
+
+.view { display: none; animation: fade .35s ease; }
+.view.active { display: block; }
+@keyframes fade { from { opacity: 0; transform: translateY(8px);} to {opacity:1; transform:none;} }
+
+/* ====== Cards ====== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 28px;
+  margin-bottom: 22px;
+}
+
+.hero { text-align: center; }
+.hero h1 { margin: 4px 0 2px; font-size: 2rem; color: var(--sena-dark); }
+.subtitle { color: var(--sena); font-weight: 600; margin: 2px 0 14px; letter-spacing:.2px; }
+.lead { color: var(--muted); margin: 0 auto 18px; max-width: 560px; }
+
+/* ====== Registro ====== */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+  margin: 12px auto 0;
+  text-align: left;
+}
+.register-form label { font-weight: 600; font-size: .95rem; }
+.register-form input {
+  padding: 13px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  font-size: 1rem;
+}
+.register-form input:focus { outline: none; border-color: var(--sena); box-shadow: 0 0 0 3px rgba(57,169,0,.15); }
+
+/* ====== Botones ====== */
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .05s ease, box-shadow .2s, background .2s;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--sena); color: #fff; }
+.btn-primary:hover { background: var(--sena-dark); box-shadow: 0 6px 16px rgba(57,169,0,.3); }
+.btn-lg { padding: 15px 26px; font-size: 1.06rem; }
+.btn-check {
+  background: #eef3ee; color: var(--sena-dark);
+  border: 1.5px solid #d4e6cf;
+}
+.btn-check:hover { background: #e3efe0; }
+
+/* ====== Banner estudiante ====== */
+.student-banner {
+  background: linear-gradient(90deg, var(--sena), var(--sena-dark));
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  font-size: .98rem;
+}
+
+/* ====== Secciones ====== */
+.section-block h2 {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  color: var(--ink);
+}
+.section-intro { color: var(--muted); font-size: .94rem; margin: 0 0 18px; }
+
+.q-item {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  line-height: 2.1;
+}
+.q-item:first-of-type { border-top: none; }
+.q-num {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  min-width: 26px; height: 26px;
+  background: #eef3ee; color: var(--sena-dark);
+  border-radius: 50%;
+  font-weight: 700; font-size: .85rem;
+  margin-right: 8px;
+}
+.q-tag {
+  font-size: .72rem;
+  background: #f0f4f8; color: var(--muted);
+  border-radius: 20px; padding: 2px 10px;
+  margin-left: 6px; white-space: nowrap;
+}
+
+/* ====== Inputs dentro de oraciones ====== */
+.blank {
+  display: inline-block;
+  min-width: 110px;
+  border: none;
+  border-bottom: 2px solid var(--sena);
+  background: #f7faf6;
+  font-size: .98rem;
+  font-family: inherit;
+  padding: 3px 8px;
+  margin: 0 3px;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+.blank.wide { min-width: 175px; }
+.blank:focus { outline: none; background: #eef7e9; }
+.verb-hint { color: var(--muted); font-size: .85rem; font-style: italic; }
+
+.blank.ok  { border-bottom-color: var(--ok);  background: var(--ok-bg); }
+.blank.bad { border-bottom-color: var(--bad); background: var(--bad-bg); }
+
+/* ====== Inputs de oración completa / textarea ====== */
+.sentence-prompt { font-style: italic; color: #444; margin: 2px 0 6px; }
+.full-input, .open-input {
+  width: 100%;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: .98rem;
+  font-family: inherit;
+  resize: vertical;
+}
+.full-input:focus, .open-input:focus { outline: none; border-color: var(--sena); box-shadow: 0 0 0 3px rgba(57,169,0,.12); }
+.full-input.ok, .open-input.ok { border-color: var(--ok); background: var(--ok-bg); }
+.full-input.bad, .open-input.bad { border-color: var(--bad); background: var(--bad-bg); }
+.scrambled-words {
+  font-family: "Consolas", monospace;
+  background: #f3f6f9; border-radius: 8px;
+  padding: 8px 12px; margin: 4px 0 8px;
+  color: #334; font-size: .92rem;
+}
+
+/* ====== Verificador por sección ====== */
+.section-actions {
+  margin-top: 18px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.section-score {
+  font-weight: 700;
+}
+.section-score.good { color: var(--ok); }
+.section-score.partial { color: #c98a00; }
+.mark { font-weight: 700; margin-left: 6px; }
+.mark.ok { color: var(--ok); }
+.mark.bad { color: var(--bad); }
+.saved-note { color: var(--sena-dark); font-weight: 600; }
+
+/* ====== Finalizar ====== */
+.finish-card { text-align: center; }
+.finish-status { margin-top: 12px; font-weight: 600; }
+.finish-status.err { color: var(--bad); }
+.finish-status.ok { color: var(--ok); }
+
+/* ====== Resultados ====== */
+.result-section { margin-bottom: 22px; }
+.result-item {
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+.result-item:first-child { border-top: none; }
+.correct-line { color: var(--ok); }
+.correct-line u { text-decoration-thickness: 2px; }
+.your-line { color: #333; }
+.your-line .miss { color: var(--bad); font-weight: 600; }
+.badge {
+  font-size: .75rem; border-radius: 20px; padding: 2px 10px; margin-left: 6px; font-weight: 700;
+}
+.badge.ok { background: var(--ok-bg); color: var(--ok); }
+.badge.bad { background: var(--bad-bg); color: var(--bad); }
+.badge.open { background: #eef2ff; color: #4458c7; }
+
+/* ====== Footer ====== */
+.footer {
+  border-top: 1px solid var(--line);
+  background: #fff;
+  padding: 24px 18px;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  text-align: center;
+}
+.footer-credits p { margin: 2px 0; color: var(--ink); font-size: .95rem; }
+.footer-credits .sponsor { color: var(--muted); font-size: .9rem; }
+.logo-factugest { height: 56px; width: auto; opacity: .95; }
+
+@media (max-width: 560px) {
+  .logo-sena { height: 64px; }
+  .card { padding: 20px 16px; }
+  .hero h1 { font-size: 1.6rem; }
+  .blank, .blank.wide { min-width: 92px; }
+}

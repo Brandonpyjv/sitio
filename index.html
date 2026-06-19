@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica de Inglés · Will, Going to & Conditionals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="topbar">
+    <img src="logoSena.png" alt="Logo SENA" class="logo-sena" />
+  </header>
+
+  <main class="container">
+
+    <!-- ============ VISTA 1: REGISTRO ============ -->
+    <section id="view-register" class="view active">
+      <div class="card hero">
+        <h1>Práctica de Inglés</h1>
+        <p class="subtitle">Will · Be Going to · Zero Conditional · First Conditional</p>
+        <p class="lead">Escribe tu nombre para comenzar. Responde escribiendo tú mismo en cada espacio.</p>
+        <form id="register-form" class="register-form" autocomplete="off">
+          <label for="fullname">Nombre completo</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Ej: Brandon Restrepo" required />
+          <button type="submit" class="btn btn-primary">Comenzar examen →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ VISTA 2: EXAMEN ============ -->
+    <section id="view-exam" class="view">
+      <div class="student-banner">
+        <span>Aprendiz: <strong id="student-name-banner"></strong></span>
+      </div>
+
+      <div id="section1" class="card section-block"></div>
+      <div id="section2a" class="card section-block"></div>
+      <div id="section2b" class="card section-block"></div>
+      <div id="section3" class="card section-block"></div>
+
+      <div class="card finish-card">
+        <p>Cuando termines todas las secciones, envía tus respuestas. Después <b>no podrás modificarlas</b>.</p>
+        <button id="btn-finish" class="btn btn-primary btn-lg">Finalizar y enviar respuestas</button>
+        <p id="finish-status" class="finish-status"></p>
+      </div>
+    </section>
+
+    <!-- ============ VISTA 3: RESULTADOS (BLOQUEADA) ============ -->
+    <section id="view-results" class="view">
+      <div class="card hero">
+        <h1>Respuestas registradas ✅</h1>
+        <p class="subtitle" id="results-name"></p>
+        <p class="lead">Estas son las respuestas que enviaste. <b>Esta vista es solo de lectura.</b> En verde aparece el verbo / la forma correcta (subrayada) y debajo lo que tú escribiste.</p>
+      </div>
+      <div id="results-content"></div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="footer-credits">
+      <p>Creado y diseñado por <strong>Brandon Restrepo</strong> y <strong>Johan Acosta</strong></p>
+      <p class="sponsor">Patrocinado por <strong>Factugest</strong> — empresa que apoya a los aprendices SENA</p>
+    </div>
+    <img src="logoFactugest.png" alt="Logo Factugest" class="logo-factugest" />
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
