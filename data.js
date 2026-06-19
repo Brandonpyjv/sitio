@@ -123,7 +123,7 @@ const EXAM = {
         model: "If the application crashes, the developers lose all the un-deployed progress.",
         accept: [
           "if the application crashes the developers lose all the un-deployed progress", "if the application crashes, the developers lose all the un-deployed progress",
-          "if the system crashes the users lose all the undeployed progress"
+          "if the system crashes, the users lose all the undeployed progress"
         ]
       },
       {
