@@ -195,7 +195,9 @@ const EXAM = {
           "developers get confused if they write complex code",
           "if developers write complex code they get confused",
           "if developers dont write complex code they get confused",
-          "developers get confused if they dont write complex code"
+          "developers get confused if they dont write complex code",
+          "if developers don't write complex code they get confused",
+          "developers get confused if they don't write complex code"
         ]
       },
       {
@@ -203,7 +205,8 @@ const EXAM = {
         scrambled: "system / help / worry / debug / don't / I / the / will / you / , / .",
         model: "Don't worry, I will help you debug the system.",
         accept: [
-          "dont worry i will help you debug the system"
+          "dont worry i will help you debug the system", 
+          "don't worry i will help you debug the system"
         ]
       },
       {
