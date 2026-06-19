@@ -18,7 +18,7 @@ const EXAM = {
         n: 1, tag: "Zero Conditional",
         parts: [
           { t: "If the server " },
-          { id: "s1_1a", verb: "get", accept: ["gets"] },
+          { id: "s1_1a", verb: "get", accept: ["gets", "gets too hot"], wide: true },
           { t: " too hot, the automated safety system " },
           { id: "s1_1b", verb: "shut", accept: ["shuts"] },
           { t: " it down immediately." }
@@ -56,7 +56,7 @@ const EXAM = {
           { t: "If you " },
           { id: "s1_5a", verb: "work", accept: ["work"] },
           { t: " on rendering high-resolution videos for hours without a break, your laptop " },
-          { id: "s1_5b", verb: "get", accept: ["gets"] },
+          { id: "s1_5b", verb: "get", accept: ["gets", "gets warm"], wide: true },
           { t: " warm." }
         ]
       },
@@ -83,7 +83,7 @@ const EXAM = {
           { t: "If code editors " },
           { id: "s1_8a", verb: "not have", accept: ["don't have", "do not have"], wide: true },
           { t: " a dark mode option, programmers' eyes " },
-          { id: "s1_8b", verb: "get", accept: ["get"] },
+          { id: "s1_8b", verb: "get", accept: ["get", "get tired"], wide: true },
           { t: " tired very fast." }
         ]
       },
