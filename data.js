@@ -115,15 +115,15 @@ const EXAM = {
     id: "s2a",
     title: "Section 2 · Part A — Correct the Error",
     instructions:
-      "Identifica y corrige el error gramatical. Escribe la oración completa y corregida.",
+      "Identifica y corrige el error gramatical. Escribe la oración completa y corregida. (Usar signos de puntuacion)",
     items: [
       {
         n: 1, id: "s2a_1",
         prompt: "If the application will crash, the developers lose all the un-deployed progress.",
         model: "If the application crashes, the developers lose all the un-deployed progress.",
         accept: [
-          "if the application crashes the developers lose all the undeployed progress",
-          "if the system crashes the users lose all the undeployed progress"
+          "if the application crashes the developers lose all the un-deployed progress.", "if the application crashes, the developers lose all the un-deployed progress.",
+          "if the system crashes the users lose all the undeployed progress."
         ]
       },
       {
@@ -131,7 +131,7 @@ const EXAM = {
         prompt: "We are going to debugging the software as soon as the terminal shows the error log.",
         model: "We are going to debug the software as soon as the terminal shows the error log.",
         accept: [
-          "we are going to debug the software as soon as the terminal shows the error log"
+          "we are going to debug the software as soon as the terminal shows the error log."
         ]
       },
       {
@@ -139,7 +139,7 @@ const EXAM = {
         prompt: "If you don't wear sunscreen when you work outside on the antennas, you get burn.",
         model: "If you don't wear sunscreen when you work outside on the antennas, you get burned.",
         accept: [
-          "if you dont wear sunscreen when you work outside on the antennas you get burned"
+          "if you dont wear sunscreen when you work outside on the antennas, you get burned.", "if you don't wear sunscreen when you work outside on the antennas, you get burned.", "if you do not wear sunscreen when you work outside on the antennas, you get burned."
         ]
       },
       {
@@ -147,7 +147,7 @@ const EXAM = {
         prompt: "I think the multimedia video is looking amazing after they will add the special effects.",
         model: "I think the multimedia video is looking amazing after they add the special effects.",
         accept: [
-          "i think the multimedia video is looking amazing after they add the special effects"
+          "i think the multimedia video is looking amazing after they add the special effects."
         ]
       },
       {
@@ -155,7 +155,7 @@ const EXAM = {
         prompt: "What happens if the database will get full during the platform launch?",
         model: "What happens if the database gets full during the platform launch?",
         accept: [
-          "what happens if the database gets full during the platform launch"
+          "what happens if the database gets full during the platform launch?"
         ]
       }
     ]
