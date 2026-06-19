@@ -211,11 +211,9 @@ const EXAM = {
       },
       {
         n: 10, id: "s2b_10",
-        scrambled: "sprint / finish / team / updates / the / deploy / will / if / they / the / .",
+        scrambled: "sprint / finishes / team / updates / the / deploy / will / if / they / the / .",
         model: "If the team finishes the sprint, they will deploy the updates.",
         accept: [
-          "if the team finish the sprint they will deploy the updates",
-          "the team will deploy the updates if they finish the sprint",
           "if the team finishes the sprint they will deploy the updates",
           "the team will deploy the updates if they finishes the sprint"
         ]
@@ -231,11 +229,11 @@ const EXAM = {
       "Lee el caso y responde con oraciones completas basándote SOLO en el texto. Esta sección no se autocalifica: tus respuestas se guardan y se revisan en grupo con la instructora.",
     caseTitle: "Case Study: The Launch of “MediaStream API”",
     caseText: [
-      "The tech development team at the agency is preparing to deploy a new platform called “MediaStream API”. According to the official roadmap, they <b>are going to migrate</b> the database to a cloud server next Monday, and the multimedia team <b>is going to export</b> all the interactive animations on Friday morning. The project manager confirmed that these actions are already scheduled.",
-      "However, tech environments are unpredictable. The lead engineer explains a permanent rule of their infrastructure: <i>“If the processor executes high-resolution rendering for more than two hours, the server hardware automatically <b>gets hot</b>. When that happens, the automated cooling system <b>turns on</b> immediately to prevent a crash.”</i>",
-      "Yesterday, during a pre-test session, a critical error appeared on the dashboard. The senior developer looked at the monitor and made a sudden decision: <i>“I see a memory leak. I <b>will debug</b> the backend code right now.”</i> Another programmer added: <i>“Great, if you fix that bug, I <b>will update</b> the user permissions interface.”</i>",
-      "The team knows that client satisfaction depends on their work. If the client <b>approves</b> the beta version tomorrow, they <b>will release</b> the platform to the public next week. On the other hand, the deployment has risks: if they <b>do not optimize</b> the code before the deadline, the application <b>will run</b> slowly on mobile devices.",
-      "Finally, the instructor reminded the team about physical well-being during long coding sessions: <i>“If programmers <b>work</b> for 12 hours without drinking water, they always <b>get thirsty</b> and <b>get tired</b>, which reduces their concentration.”</i>"
+      "The tech development team at the agency is preparing to deploy a new platform called “MediaStream API”. According to the official roadmap, they are going to migrate the database to a cloud server next Monday, and the multimedia team is going to export all the interactive animations on Friday morning. The project manager confirmed that these actions are already scheduled.",
+      "However, tech environments are unpredictable. The lead engineer explains a permanent rule of their infrastructure: <i>“If the processor executes high-resolution rendering for more than two hours, the server hardware automatically gets hot. When that happens, the automated cooling system turns on immediately to prevent a crash.”</i>",
+      "Yesterday, during a pre-test session, a critical error appeared on the dashboard. The senior developer looked at the monitor and made a sudden decision: <i>“I see a memory leak. I will debug the backend code right now.”</i> Another programmer added: <i>“Great, if you fix that bug, I will update the user permissions interface.”</i>",
+      "The team knows that client satisfaction depends on their work. If the client approves the beta version tomorrow, they will release the platform to the public next week. On the other hand, the deployment has risks: if they do not optimize the code before the deadline, the application will run slowly on mobile devices.",
+      "Finally, the instructor reminded the team about physical well-being during long coding sessions: <i>“If programmers work for 12 hours without drinking water, they always get thirsty and get tired, which reduces their concentration.”</i>"
     ],
     items: [
       { n: 1, id: "s3_1", q: "What is the scheduled plan for the development team next Monday? <i>(Be Going to, affirmative)</i>", model: "Next Monday, they are going to migrate the database to a cloud server." },
